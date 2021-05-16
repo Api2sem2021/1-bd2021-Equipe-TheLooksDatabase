@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <p align="left">
-<img src="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/Backlog/Backlog1.png" alt="Image" height="500" width="700">
+  <img src="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/Backlog/backlog%202.png" />
 </p>  
 
 <h1 align="left">Sprint 1</h1>
@@ -19,14 +19,20 @@
 
 ### Calculadora de juros compostos
 
+- Saiba qual será o retorno da sua aplicação de juros compostos no final do período desejado
+
 ### Conversor de Moedas
+
+- Saiba quanto irá pagar por moedas estrangeiras independente de qual esteja usando
 
 ### Cotação do dia 
 
+- Saiba em tempo real qual é o preço que iria pagar por moedas como dólar, euro e Bitcoin!
+
 ### Metas
 
+- Quanto dinheiro você quer alcançar e em quanto tempo? Forneça alguns valores de seu querer e nós calculamos!
 
-<h1 align="left">Tecnologias usadas/h1>
 
 <h1 align="left">Protótipo</h1>
 
