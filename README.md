@@ -25,7 +25,7 @@
 
 <h1 align="left">Gráfico Burndown</h1>
 <p align="left">
-  <img src="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/grafico%203%20sprint.PNG" />
+  <img src="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/grafico%203%20sprint.PNG"/>
 </p> 
 
 
