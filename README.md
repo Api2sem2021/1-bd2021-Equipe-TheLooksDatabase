@@ -51,9 +51,6 @@ No front end temos a tela de splash e o layout da tela de menu.
 
 
 
-<h1 align="left">Protótipo</h1>
-
-  Acesse o link abaixo para visualização das funções referente a segunda parte feita.
   
 
 					  
