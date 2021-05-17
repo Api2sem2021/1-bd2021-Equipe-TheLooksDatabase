@@ -30,9 +30,7 @@
 
 
 
-<h1 align="left">Protótipo</h1>
 
-  Acesse o link abaixo para visualização das funções referente a terceira parte feita.
   
 
 					  
