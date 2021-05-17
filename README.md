@@ -34,10 +34,6 @@
 - Quanto dinheiro você quer alcançar e em quanto tempo? Forneça alguns valores de seu querer e nós calculamos!
 
 
-<h1 align="left">Protótipo</h1>
-
-  Acesse o link abaixo para visualização das funções referente a primeira parte feita.
-  
 
 					  
 
