@@ -1,0 +1,479 @@
+<Gerenciador>:
+    Screen:
+        name: 'menu'
+        FloatLayout:
+        Screen:
+            canvas:
+                Color:
+                    rgba: app.theme_cls.primary_color
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: [0, 0, 0, 0]
+
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+
+        MDIconButton:
+            icon: "images\perfil.png"
+            pos_hint: {"center_x": .2, "center_y": .85}
+            on_release: root.current = 'perfil'
+            
+        Label:
+            text: 'Perfil de'
+            pos_hint: {"center_x": .2, "center_y": .78}
+        Label:
+            text: 'investidor'
+            pos_hint: {"center_x": .2, "center_y": .75}
+
+        MDIconButton:
+            icon: "images\icone-noticia.png"
+            pos_hint: {"center_x": .2, "center_y": .65}
+            on_release: root.current = 'noticia'
+        
+        Label:
+            text: 'Notícias'
+            pos_hint: {"center_x": .2, "center_y": .58}
+
+        MDIconButton:
+            icon: "images\icone-juros.png"
+            pos_hint: {"center_x": .2, "center_y": .45}
+            on_release: root.current = 'simulador'
+        Label:
+            text: 'Simulador de '
+            pos_hint: {"center_x": .2, "center_y": .38}
+        Label:
+            text: 'Juros Compostos'
+            pos_hint: {"center_x": .2, "center_y": .35}
+
+        MDIconButton:
+            icon: "images\Vector.png"
+            pos_hint: {"center_x": .2, "center_y": .25}
+            on_release: root.current = 'comparativo'
+        Label:
+            text: 'Comparativo entre'
+            pos_hint: {"center_x": .2, "center_y": .18}
+        Label:
+            text: 'corretoras'
+            pos_hint: {"center_x": .2, "center_y": .15}
+
+
+
+        MDIconButton:
+            icon: "images\icone-cotacao.png"
+            pos_hint: {"center_x": .8, "center_y": .85}
+            on_release: root.current = 'cotacao'
+        Label:
+            text: 'Cotação'
+            pos_hint: {"center_x": .8, "center_y": .78}
+        
+
+        MDIconButton:
+            icon: "images\icone-meta.png"
+            pos_hint: {"center_x": .8, "center_y": .65}
+            on_release: root.current = 'metas'
+        
+        Label:
+            text: 'Metas'
+            pos_hint: {"center_x": .8, "center_y": .58}
+
+        MDIconButton:
+            icon: "images\icone-taxa.png"
+            pos_hint: {"center_x": .8, "center_y": .45}
+            on_release: root.current = 'conversao'
+        Label:
+            text: 'Conversão de '
+            pos_hint: {"center_x": .8, "center_y": .38}
+        Label:
+            text: 'Taxa de Câmbio'
+            pos_hint: {"center_x": .8, "center_y": .35}
+
+        MDIconButton:
+            icon: "images\icone-acao.png"
+            pos_hint: {"center_x": .8, "center_y": .25}
+            on_release: root.current = 'codigo'
+        Label:
+            text: 'Código de ação'
+            pos_hint: {"center_x": .8, "center_y": .18}
+            
+    codigo_acao:
+    perfil_kv:
+    noticia_kv:
+    simulador_kv:
+    comparativo_kv:
+    cotacao_kv:
+    metas_kv:
+    conversao_kv:
+
+<codigo_acao>:
+    name: 'codigo'
+    FloatLayout:
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+            right_action_items: [["dots-vertical", lambda x: app.callback_1()]]
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": .05}
+            size_hint_y: 0.1
+
+        MDFloatingActionButton:
+            icon: "images\icone.png"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .1, "center_y": .75}
+            
+        
+        MDFillRoundFlatButton:
+            text: "Código de ações"
+            md_bg_color: 0.15, 0.8, 0.25, 1
+            pos_hint: {"center_x": .8, "center_y": .85}
+            size_hint_x: .18
+            user_font_size: "20sp"
+        
+        MDFillRoundFlatButton:
+            text: "De qual empresa deseja saber o código de ação?"
+            md_bg_color: 0, 0, 0, 0.15
+            pos_hint: {"center_x": .3, "center_y": .68}
+            size_hint_x: .40
+            user_font_size: "20sp"
+            text_size: self.size     
+            halign: 'center'
+            valign: 'center'
+            
+            
+        MDTextFieldRound:
+            id: codigo_input
+            hint_text: "Digite Algo!"
+            line_color_focus: 1, 1, 1, 1
+            size_hint_x: .8
+            pos_hint: {"center_x": 0.45, "center_y": .05}
+            fill_color: 0, 0, 0, .4
+            
+        MDIconButton:
+            icon: "microphone"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .82, "center_y": .053}
+
+<perfil_kv>:
+    name: 'perfil'
+    FloatLayout:
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+            right_action_items: [["dots-vertical", lambda x: app.callback_1()]]
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": .05}
+            size_hint_y: 0.1
+
+        MDFloatingActionButton:
+            icon: "images\icone.png"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .1, "center_y": .75}
+            
+        
+        MDFillRoundFlatButton:
+            text: "Perfil de Investidor"
+            md_bg_color: 0.15, 0.8, 0.25, 1
+            pos_hint: {"center_x": .8, "center_y": .85}
+            size_hint_x: .18
+            user_font_size: "20sp"
+        
+        MDFillRoundFlatButton:
+            text: "Você já fez sua reserva de emergência?"
+            md_bg_color: 0, 0, 0, 0.15
+            pos_hint: {"center_x": .3, "center_y": .68}
+            size_hint_x: .40
+            user_font_size: "20sp"
+            
+            
+        MDTextFieldRound:
+            id: codigo_input
+            hint_text: "Digite Algo!"
+            line_color_focus: 1, 1, 1, 1
+            size_hint_x: .8
+            pos_hint: {"center_x": 0.45, "center_y": .05}
+            fill_color: 0, 0, 0, .4
+            
+        MDIconButton:
+            icon: "microphone"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .82, "center_y": .053}
+
+<noticia_kv>:
+    name: 'noticia'
+    FloatLayout:
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+            right_action_items: [["dots-vertical", lambda x: app.callback_1()]]
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": .05}
+            size_hint_y: 0.1
+
+        MDFloatingActionButton:
+            icon: "images\icone.png"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .1, "center_y": .75}
+            
+        
+        MDFillRoundFlatButton:
+            text: "Notícias"
+            md_bg_color: 0.15, 0.8, 0.25, 1
+            pos_hint: {"center_x": .8, "center_y": .85}
+            size_hint_x: .18
+            user_font_size: "20sp"
+        
+        MDFillRoundFlatButton:
+            text: "---"
+            md_bg_color: 0, 0, 0, 0.15
+            pos_hint: {"center_x": .3, "center_y": .68}
+            size_hint_x: .40
+            user_font_size: "20sp"
+            
+            
+        MDTextFieldRound:
+            id: codigo_input
+            hint_text: "Digite Algo!"
+            line_color_focus: 1, 1, 1, 1
+            size_hint_x: .8
+            pos_hint: {"center_x": 0.45, "center_y": .05}
+            fill_color: 0, 0, 0, .4
+            
+        MDIconButton:
+            icon: "microphone"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .82, "center_y": .053}
+
+<simulador_kv>:
+    name: 'simulador'
+    FloatLayout:
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+            right_action_items: [["dots-vertical", lambda x: app.callback_1()]]
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": .05}
+            size_hint_y: 0.1
+
+        MDFloatingActionButton:
+            icon: "images\icone.png"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .1, "center_y": .75}
+            
+        
+        MDFillRoundFlatButton:
+            text: "Simulador"
+            md_bg_color: 0.15, 0.8, 0.25, 1
+            pos_hint: {"center_x": .8, "center_y": .85}
+            size_hint_x: .18
+            user_font_size: "20sp"
+        
+        MDFillRoundFlatButton:
+            text: "Qual o valor inicial que você investirá?"
+            md_bg_color: 0, 0, 0, 0.15
+            pos_hint: {"center_x": .3, "center_y": .68}
+            size_hint_x: .40
+            user_font_size: "20sp"
+            
+            
+        MDTextFieldRound:
+            id: codigo_input
+            hint_text: "Digite Algo!"
+            line_color_focus: 1, 1, 1, 1
+            size_hint_x: .8
+            pos_hint: {"center_x": 0.45, "center_y": .05}
+            fill_color: 0, 0, 0, .4
+            
+        MDIconButton:
+            icon: "microphone"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .82, "center_y": .053}
+
+<comparativo_kv>:
+    name: 'comparativo'
+    FloatLayout:
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+            right_action_items: [["dots-vertical", lambda x: app.callback_1()]]
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": .05}
+            size_hint_y: 0.1
+
+        MDFloatingActionButton:
+            icon: "images\icone.png"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .1, "center_y": .75}
+            
+        
+        MDFillRoundFlatButton:
+            text: "Comparativo"
+            md_bg_color: 0.15, 0.8, 0.25, 1
+            pos_hint: {"center_x": .8, "center_y": .85}
+            size_hint_x: .18
+            user_font_size: "20sp"
+        
+        MDFillRoundFlatButton:
+            text: "Bem-vindo ao comparativo de corretoras!"
+            md_bg_color: 0, 0, 0, 0.15
+            pos_hint: {"center_x": .3, "center_y": .68}
+            size_hint_x: .40
+            user_font_size: "20sp"
+            
+            
+        MDTextFieldRound:
+            id: codigo_input
+            hint_text: "Digite Algo!"
+            line_color_focus: 1, 1, 1, 1
+            size_hint_x: .8
+            pos_hint: {"center_x": 0.45, "center_y": .05}
+            fill_color: 0, 0, 0, .4
+            
+        MDIconButton:
+            icon: "microphone"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .82, "center_y": .053}
+
+<cotacao_kv>:
+    name: 'cotacao'
+    FloatLayout:
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+            right_action_items: [["dots-vertical", lambda x: app.callback_1()]]
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": .05}
+            size_hint_y: 0.1
+
+        MDFloatingActionButton:
+            icon: "images\icone.png"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .1, "center_y": .75}
+            
+        
+        MDFillRoundFlatButton:
+            text: "Cotação"
+            md_bg_color: 0.15, 0.8, 0.25, 1
+            pos_hint: {"center_x": .8, "center_y": .85}
+            size_hint_x: .18
+            user_font_size: "20sp"
+        
+        MDFillRoundFlatButton:
+            text: "Bem-vindo(a) a cotação do dia!"
+            md_bg_color: 0, 0, 0, 0.15
+            pos_hint: {"center_x": .3, "center_y": .68}
+            size_hint_x: .40
+            user_font_size: "20sp"
+            
+            
+        MDTextFieldRound:
+            id: codigo_input
+            hint_text: "Digite Algo!"
+            line_color_focus: 1, 1, 1, 1
+            size_hint_x: .8
+            pos_hint: {"center_x": 0.45, "center_y": .05}
+            fill_color: 0, 0, 0, .4
+            
+        MDIconButton:
+            icon: "microphone"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .82, "center_y": .053}
+
+<metas_kv>:
+    name: 'metas'
+    FloatLayout:
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+            right_action_items: [["dots-vertical", lambda x: app.callback_1()]]
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": .05}
+            size_hint_y: 0.1
+
+        MDFloatingActionButton:
+            icon: "images\icone.png"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .1, "center_y": .75}
+            
+        
+        MDFillRoundFlatButton:
+            text: "Metas"
+            md_bg_color: 0.15, 0.8, 0.25, 1
+            pos_hint: {"center_x": .8, "center_y": .85}
+            size_hint_x: .18
+            user_font_size: "20sp"
+        
+        MDFillRoundFlatButton:
+            text: "Quanto deseja investir?"
+            md_bg_color: 0, 0, 0, 0.15
+            pos_hint: {"center_x": .3, "center_y": .68}
+            size_hint_x: .40
+            user_font_size: "20sp"
+            
+            
+        MDTextFieldRound:
+            id: codigo_input
+            hint_text: "Digite Algo!"
+            line_color_focus: 1, 1, 1, 1
+            size_hint_x: .8
+            pos_hint: {"center_x": 0.45, "center_y": .05}
+            fill_color: 0, 0, 0, .4
+            
+        MDIconButton:
+            icon: "microphone"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .82, "center_y": .053}
+
+<conversao_kv>:
+    name: 'conversao'
+    FloatLayout:
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": 0.95}
+            size_hint_y: 0.1
+            left_action_items: [["arrow-left", lambda x: app.callback()]]
+            right_action_items: [["dots-vertical", lambda x: app.callback_1()]]
+        MDToolbar:
+            pos_hint: {"center_x": .5, "center_y": .05}
+            size_hint_y: 0.1
+
+        MDFloatingActionButton:
+            icon: "images\icone.png"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .1, "center_y": .75}
+            
+        
+        MDFillRoundFlatButton:
+            text: "Conversor"
+            md_bg_color: 0.15, 0.8, 0.25, 1
+            pos_hint: {"center_x": .8, "center_y": .85}
+            size_hint_x: .18
+            user_font_size: "20sp"
+        
+        MDFillRoundFlatButton:
+            text: "Para realizar a conversão, use os seguintes códigos:"
+            md_bg_color: 0, 0, 0, 0.15
+            pos_hint: {"center_x": .32, "center_y": .68}
+            size_hint_x: .43
+            user_font_size: "20sp"
+            
+            
+        MDTextFieldRound:
+            id: codigo_input
+            hint_text: "Digite Algo!"
+            line_color_focus: 1, 1, 1, 1
+            size_hint_x: .8
+            pos_hint: {"center_x": 0.45, "center_y": .05}
+            fill_color: 0, 0, 0, .4
+            
+        MDIconButton:
+            icon: "microphone"
+            user_font_size: "20sp"
+            pos_hint: {"center_x": .82, "center_y": .053}
