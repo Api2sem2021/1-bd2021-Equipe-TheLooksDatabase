@@ -28,7 +28,10 @@ class cotacao_kv(Screen):
 
 
 class metas_kv(Screen):
-    pass
+    def AddWidgetMetas(self,msg, *args):
+        pass
+
+
 class conversao_kv(Screen):
     pass
 class Menu(MDApp):

@@ -434,6 +434,7 @@
 <metas_kv>:
     name: 'metas'
     FloatLayout:
+        id: metas_layout
         MDToolbar:
             pos_hint: {"center_x": .5, "center_y": 0.95}
             size_hint_y: 0.1
@@ -468,7 +469,7 @@
             
             
         MDTextFieldRound:
-            id: codigo_input
+            id: metas_input
             hint_text: "Digite Algo!"
             line_color_focus: 1, 1, 1, 1
             size_hint_x: .8
@@ -484,6 +485,7 @@
             icon: "images\send.png"
             user_font_size: "1sp"
             pos_hint: {"center_x": .85, "center_y": .053}
+            on_release: root.AddWidgetMetas(metas_input.text)
 
 <conversao_kv>:
     name: 'conversao'
