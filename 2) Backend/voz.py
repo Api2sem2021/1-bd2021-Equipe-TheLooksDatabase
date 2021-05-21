@@ -9,7 +9,7 @@ from noticias import *
 from perfil import *
 from comparativo_corretoras import *
 from metas import *
-from codigo import*
+from codigo import *
 
 reproducao = pyttsx3.init()
 
