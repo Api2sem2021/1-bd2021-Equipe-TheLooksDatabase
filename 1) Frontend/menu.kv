@@ -11,10 +11,6 @@
                     size: self.size
                     radius: [0, 0, 0, 0]
 
-        MDToolbar:
-            pos_hint: {"center_x": .5, "center_y": 0.95}
-            size_hint_y: 0.1
-            left_action_items: [["arrow-left", lambda x: app.callback()]]
 
         MDIconButton:
             icon: "images\perfil.png"
@@ -160,6 +156,11 @@
             icon: "microphone"
             user_font_size: "20sp"
             pos_hint: {"center_x": .82, "center_y": .053}
+        
+        MDIconButton:
+            icon: "images\send.png"
+            user_font_size: "1sp"
+            pos_hint: {"center_x": .85, "center_y": .053}
 
 <perfil_kv>:
     name: 'perfil'
@@ -210,6 +211,11 @@
             user_font_size: "20sp"
             pos_hint: {"center_x": .82, "center_y": .053}
 
+        MDIconButton:
+            icon: "images\send.png"
+            user_font_size: "1sp"
+            pos_hint: {"center_x": .85, "center_y": .053}
+
 <noticia_kv>:
     name: 'noticia'
     FloatLayout:
@@ -258,6 +264,11 @@
             icon: "microphone"
             user_font_size: "20sp"
             pos_hint: {"center_x": .82, "center_y": .053}
+        
+        MDIconButton:
+            icon: "images\send.png"
+            user_font_size: "1sp"
+            pos_hint: {"center_x": .85, "center_y": .053}
 
 <simulador_kv>:
     name: 'simulador'
@@ -308,6 +319,10 @@
             user_font_size: "20sp"
             pos_hint: {"center_x": .82, "center_y": .053}
 
+        MDIconButton:
+            icon: "images\send.png"
+            user_font_size: "1sp"
+            pos_hint: {"center_x": .85, "center_y": .053}
 <comparativo_kv>:
     name: 'comparativo'
     FloatLayout:
@@ -357,6 +372,11 @@
             user_font_size: "20sp"
             pos_hint: {"center_x": .82, "center_y": .053}
 
+        MDIconButton:
+            icon: "images\send.png"
+            user_font_size: "1sp"
+            pos_hint: {"center_x": .85, "center_y": .053}
+
 <cotacao_kv>:
     name: 'cotacao'
     FloatLayout:
@@ -405,6 +425,11 @@
             icon: "microphone"
             user_font_size: "20sp"
             pos_hint: {"center_x": .82, "center_y": .053}
+        
+        MDIconButton:
+            icon: "images\send.png"
+            user_font_size: "1sp"
+            pos_hint: {"center_x": .85, "center_y": .053}
 
 <metas_kv>:
     name: 'metas'
@@ -455,6 +480,11 @@
             user_font_size: "20sp"
             pos_hint: {"center_x": .82, "center_y": .053}
 
+        MDIconButton:
+            icon: "images\send.png"
+            user_font_size: "1sp"
+            pos_hint: {"center_x": .85, "center_y": .053}
+
 <conversao_kv>:
     name: 'conversao'
     FloatLayout:
@@ -503,3 +533,8 @@
             icon: "microphone"
             user_font_size: "20sp"
             pos_hint: {"center_x": .82, "center_y": .053}
+        
+        MDIconButton:
+            icon: "images\send.png"
+            user_font_size: "1sp"
+            pos_hint: {"center_x": .85, "center_y": .053}
