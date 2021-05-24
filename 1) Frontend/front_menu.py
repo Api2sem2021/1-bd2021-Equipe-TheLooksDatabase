@@ -5,6 +5,7 @@ from kivy.core.window import Window
 from kivy.uix.image import Image
 from kivy.animation import Animation
 
+
 class Gerenciador(ScreenManager):
     pass
 
@@ -28,9 +29,19 @@ class cotacao_kv(Screen):
 
 
 class metas_kv(Screen):
-    def AddWidgetMetas(self,msg, *args):
-        pass
+    
+    def AddWidgetMetas(self, *args):
+        cont = 1
+        sair = False
+        while not sair:
+            if cont ==1:
+                self.ids.num1.text = 'Quanto deseja alcançar?'
+                self.ids.resp.text = self.ids.metas_input.text
+                cont+=1
+                if cont ==2:
+                    sair = True
 
+        
 
 class conversao_kv(Screen):
     pass

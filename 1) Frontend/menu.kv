@@ -454,6 +454,7 @@
             
         
         MDFillRoundFlatButton:
+            id: resp
             text: "Metas"
             md_bg_color: 0.15, 0.8, 0.25, 1
             pos_hint: {"center_x": .8, "center_y": .85}
@@ -461,6 +462,7 @@
             user_font_size: "20sp"
         
         MDFillRoundFlatButton:
+            id: num1
             text: "Quanto deseja investir?"
             md_bg_color: 0, 0, 0, 0.15
             pos_hint: {"center_x": .3, "center_y": .68}
@@ -482,10 +484,11 @@
             pos_hint: {"center_x": .82, "center_y": .053}
 
         MDIconButton:
+            id: send_metas
             icon: "images\send.png"
             user_font_size: "1sp"
             pos_hint: {"center_x": .85, "center_y": .053}
-            on_release: root.AddWidgetMetas(metas_input.text)
+            on_release: root.AddWidgetMetas()
 
 <conversao_kv>:
     name: 'conversao'
