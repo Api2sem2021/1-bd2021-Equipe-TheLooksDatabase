@@ -15,7 +15,6 @@ def informacoes():
     atributo1 = noticias.find('div', attrs={'class': 'row m-0 border-t-mobile py-3 py-lg-0 pb-lg-3'})
     titulo1 = atributo1.find('span', attrs={'class': 'hl-title hl-title-4'})
     resposta1 = titulo1.text
-    print(resposta1)
     sai_som(resposta1)
     print()
 
@@ -23,7 +22,6 @@ def informacoes():
     atributo2 = noticias.find('div', attrs={'class': 'row m-0 py-3 border-t'})
     titulo2 = atributo2.find('span', attrs={'class': 'hl-title hl-title-4'})
     resposta2 = titulo2.text
-    print(resposta2)
     sai_som(resposta2 )
     print()
 
@@ -31,7 +29,6 @@ def informacoes():
     atributo3 = noticias2.find('div', attrs={'class': 'row m-0 mx-3 mx-lg-0 mt-3 position-relative'})
     titulo3 = atributo3.find('span', attrs={'class': 'hl-title hl-title-8'})
     resposta3 = titulo3.text[15:]
-    print(resposta3)
     sai_som(resposta3 )
     print()
     #row m-0 mx-3 mx-lg-0 mt-3 mt-lg-2 position-relative
@@ -40,7 +37,6 @@ def informacoes():
     atributo4 = noticias2.find('div', attrs={'class': 'row m-0 mx-3 mx-lg-0 mt-3 mt-lg-2 position-relative'})
     titulo4 = atributo4.find('span', attrs={'class': 'hl-title hl-title-8'})
     resposta4 = titulo4.text[15:]
-    print(resposta4)
     sai_som(resposta4)
     print()
 

@@ -20,10 +20,17 @@ def sai_som(mensagem, imprimir=True):
     reproducao.runAndWait()
 
 def menu(user_name): 
-    print(f'''{user_name} bem-vindo ao Julius! Escolha uma das opções:
-    
+    sai_som(f'{user_name} bem-vindo ao Julius! Escolha uma das opções: ')
+    print('''
+    1 - Conversor;
+    2 - Calculador;
+    3 - Cotação;
+    4 - Notícias;
+    5 - Perfil;
+    6 - Código;
+    7 - Comparativo;
+    8 - Metas.
     ''')
-    sai_som()
 
         
 def assistente():

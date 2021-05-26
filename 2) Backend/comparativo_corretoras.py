@@ -4,25 +4,12 @@ con = sqlite3.connect('corretoras.db')
 cur = con.cursor()
 
 def comparativo():
-    print('''
-        ===========================================================
-        Bem-vindo ao comparativo de corretoras!
-        Compare duas corretoras em um quesitao desejado.
-        Atualmente temos as corretoras:
-        - XP;
-        - Itau;
-        - Ativa;
-        - Rico;
-        - Bradesco;
-        - Icap;
-        - Easynet;
-        - Mirae;
-        - Banco do brasil;
-        - Santander.
-        ===========================================================
-    ''')
     sai_som('''
+        ===========================================================
         Bem-vindo ao comparativo de corretoras!
+        
+    ''')
+    print('''
         Compare duas corretoras em um quesitao desejado.
         Atualmente temos as corretoras:
         - XP;
@@ -35,27 +22,22 @@ def comparativo():
         - Mirae;
         - Banco do brasil;
         - Santander.
-
+        ===========================================================
     ''')
+
     sai_som('Digite o nome da primeira corretora: ')
-    corretora = input('Digite o nome da primeira corretora: ')
+    corretora = input('')
 
 
     sai_som('Digite a segunda corretora que deseja fazer comparação: ')
-    corretora2 = input('Digite a segunda corretora que deseja fazer comparação: ')
+    corretora2 = input('')
 
 
-    print('''
-        Atualmente temos os seguientes quesitos de comparação:
-        - Segurança;
-        - Experiencia investidor;
-        - Avaliação final;
-        - Custos mensais 3;
-        - Custos mensais 5;
-        - Custos mensais 10.
-    ''')
     sai_som('''
         Atualmente temos os seguientes quesitos de comparação:
+
+    ''')
+    print('''
         - Segurança;
         - Experiencia investidor;
         - Avaliação final;
@@ -64,7 +46,7 @@ def comparativo():
         - Custos mensais 10.
     ''')
     sai_som('Digite qual o quesito que você deseja comparar:  ')
-    comparativo = input('Digite qual o quesito que você deseja comparar:  ')
+    comparativo = input('')
 
 
     dict_corretora = {
@@ -96,7 +78,6 @@ def comparativo():
     for row in cur.execute(f'SELECT {dict_fator_comparativo[comparativo.lower()]} FROM corretoras WHERE cod_corretora == ? or cod_corretora == ?', query_parameters):
         custos_mensais.append(row[0])
 
-    print(f'Os dados da corretota {corretora} são de: {custos_mensais[0]} e da corretora {corretora2} são de: {custos_mensais[1]} ')
     sai_som(f'Os dados da corretota {corretora} são de: {custos_mensais[0]} e da corretora {corretora2} são de: {custos_mensais[1]} ')
 
     con.commit()
