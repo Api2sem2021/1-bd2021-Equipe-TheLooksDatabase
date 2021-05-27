@@ -14,12 +14,14 @@ O nosso aplicativo traz o que há de mais inovador no mercado financeiro naciona
 
 - Neylkson Diniz Pereira (Scrum Master) [LinkedIn](https://www.linkedin.com/in/neylkson-diniz-a3b9396b), [GitHub](https://github.com/NeyDiniz) 
 - José Maria Reis dos Santos (DEV) - [GitHub](https://github.com/Jose0588) 
-- Kauã Walbon Santos Borgarelli Tavares (DEV) - [GitHub](https://github.com/Borgarelli)
+- Kauã Walbon Santos Borgarelli Tavares (DEV) - [GitHub](https://github.com/Borgarelli), [LinkedIn](https://www.linkedin.com/in/kau%C3%A3-walbon-santos-borgarelli-tavares-5bb67220a/)
 - Luiz Felipe Gonçalves Braga (DEV) - [LinkedIn](https://www.linkedin.com/in/luiz-felipe-gon%C3%A7alves-braga-613179200/), [GitHub](https://github.com/Obrag)
 - Renan Felipe Basiotte da Silva (DEV) - [LinkedIn](https://www.linkedin.com/in/renan-basiotte-b8570314a/), [GitHub](https://github.com/renanbst)
 - Victor Araujo Paula Cavichioli (DEV) - [LinkedIn](https://www.linkedin.com/in/victor-araujo-paula-cavichioli-9ab48418b/), [GitHub](https://github.com/VictorCavichioli)
 - Zaion Felippe Gomes Arruda (DEV) - [GitHub](https://github.com/ZaionKun)
-
+- Beatriz Medeiros de Oliveira Santos (DEV) - [LinkedIn](https://www.linkedin.com/in/beatriz-medeiros-a98396202/)
+- Joice Elen Pereira Teixeira (DEV) - 
+- Guilherme Akinyele de Almeida (DEV) - [GitHub](https://github.com/gui-akinyele), [LinkedIn](https://www.linkedin.com/in/guilherme-akinyele/)
 
 ### Vídeo de Introdução ao Projeto
 [Youtube](https://www.youtube.com/watch?v=vTtysSErHII)
