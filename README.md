@@ -15,7 +15,7 @@
 
 - Neylkson Diniz Pereira (Scrum Master) [LinkedIn](https://www.linkedin.com/in/neylkson-diniz-a3b9396b), [GitHub](https://github.com/NeyDiniz) 
 - José Maria Reis dos Santos (DEV) - [GitHub](https://github.com/Jose0588) 
-- Kauã Walbon Santos Borgarelli Tavares (DEV) - [GitHub](https://github.com/Borgarelli)
+- Kauã Walbon Santos Borgarelli Tavares (DEV) - [LinkedIn](, [GitHub](https://github.com/Borgarelli)
 - Luiz Felipe Gonçalves Braga (DEV) - [LinkedIn](https://www.linkedin.com/in/luiz-felipe-gon%C3%A7alves-braga-613179200/), [GitHub](https://github.com/Obrag)
 - Renan Felipe Basiotte da Silva (DEV) - [LinkedIn](https://www.linkedin.com/in/renan-basiotte-b8570314a/), [GitHub](https://github.com/renanbst)
 - Victor Araujo Paula Cavichioli (DEV) - [LinkedIn](https://www.linkedin.com/in/victor-araujo-paula-cavichioli-9ab48418b/), [GitHub](https://github.com/VictorCavichioli)
