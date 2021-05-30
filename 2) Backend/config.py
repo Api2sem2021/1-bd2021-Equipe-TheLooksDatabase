@@ -29,7 +29,9 @@ comandos = {
 }
 reproducao = pyttsx3.init()
 
-def sai_som(resposta):
-    reproducao.say(resposta)
+def sai_som(mensagem, imprimir=True):
+    if imprimir:
+        print(mensagem)
+    reproducao.say(mensagem)
     reproducao.runAndWait()
 
