@@ -5,7 +5,7 @@ cur = con.cursor()
 
 def comparativo():
     sai_som('''
-        ===========================================================
+        
         Bem-vindo ao comparativo de corretoras!
         
     ''')
@@ -22,7 +22,7 @@ def comparativo():
         - Mirae;
         - Banco do brasil;
         - Santander.
-        ===========================================================
+        
     ''')
 
     sai_som('Diga, qual vai ser a primeira corretora: ')

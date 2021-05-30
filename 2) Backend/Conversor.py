@@ -6,7 +6,6 @@ def Conversor_Moedas():
     c = CurrencyRates()
 
     sai_som('''
-        =====================================================
         Para realizar a conversão, use os seguintes códigos:
     ''')
     print('''
@@ -16,7 +15,7 @@ def Conversor_Moedas():
         'USD' - para dólar americano;
         'BRL' - para real brasileiro;
         'GBP' - para libra;
-        =====================================================
+
     ''')
 
     sai_som('Qual é a moeda do seu valor? ')
