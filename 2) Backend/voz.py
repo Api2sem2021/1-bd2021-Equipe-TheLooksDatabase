@@ -23,7 +23,7 @@ def menu(user_name):
     sai_som(f'{user_name} bem-vindo ao Julius! Escolha uma das opções: ')
     print('''
     1 - Conversor;
-    2 - Calculador;
+    2 - Calculadora;
     3 - Cotação;
     4 - Notícias;
     5 - Perfil;
