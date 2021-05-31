@@ -6,7 +6,7 @@ def codigo():
 
     #Imprimi o valor e printa o código de ação
     if cod_acao == ('NETFLIX'):
-        sai_som('NFLX34')
+        sai_som('O código de ação dessa empresa é: NFLX34')
 
     elif cod_acao == ('ITAU'):
         sai_som('O código de ação dessa empresa é: ITUB3F')
