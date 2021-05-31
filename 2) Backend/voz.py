@@ -121,10 +121,7 @@ def assistente():
                     resposta = metas()
                     
                     sai_som('{}'.format(resposta))
-                else:
-                    resposta = conversas[entrada]
-
-                sai_som('{}'.format(resposta))                                               
+                                                               
             
             except sr.UnknownValueError: #Se não conseguir, retorne isso (Necessário especificar o erro)
                 sai_som(resposta_erro_aleatoria)

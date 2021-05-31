@@ -19,13 +19,13 @@ def Conversor_Moedas():
     ''')
 
     sai_som('Qual é a moeda do seu valor? ')
-    actually = str(input(''))
+    actually = str(input('')).upper()
     
     sai_som('Qual é o seu valor? ')
     valor = float(input(''))
     
     sai_som('Qual é a sua moeda final? ')
-    final = str(input(''))
+    final = str(input('')).upper()
     
     convert = c.convert(actually, final, valor)
 
