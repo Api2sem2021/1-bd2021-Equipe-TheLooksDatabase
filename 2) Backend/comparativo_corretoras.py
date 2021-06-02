@@ -29,12 +29,12 @@ def comparativo():
     corretora = input('')
 
 
-    sai_som('Qual a segunda corretora que deseja fazer comparação: ')
+    sai_som('Qual a segunda corretora que deseja fazer uma comparação: ')
     corretora2 = input('')
 
 
     sai_som('''
-        Atualmente, temos os seguientes critérios de comparação:
+        Atualmente, temos os seguintes critérios de comparação:
 
     ''')
     print('''
