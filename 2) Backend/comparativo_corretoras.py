@@ -10,8 +10,8 @@ def comparativo():
         
     ''')
     print('''
-        Compare duas corretoras em um quesitao desejado.
-        Atualmente temos as corretoras:
+        Compare duas corretoras em um quesito desejado.
+        Atualmente, temos as seguintes corretoras:
         - XP;
         - Itau;
         - Ativa;
@@ -45,7 +45,7 @@ def comparativo():
         - Custos mensais 5;
         - Custos mensais 10.
     ''')
-    sai_som('Qual o critério de compararação:  ')
+    sai_som('Qual o critério de comparação:  ')
     comparativo = input('')
 
 
