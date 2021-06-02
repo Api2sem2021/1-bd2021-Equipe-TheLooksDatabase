@@ -31,5 +31,3 @@ def Conversor_Moedas():
 
     sai_som(f'{valor} {actually} são {convert:.2f} {final}. ')
 
-if __name__ == '__main__':
-    Conversor_Moedas()
