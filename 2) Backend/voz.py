@@ -23,7 +23,7 @@ def menu(user_name):
     sai_som(f'{user_name} bem-vindo ao Julius! Escolha uma das opções: ')
     print('''
     1 - Conversor;
-    2 - Calculador;
+    2 - Calculadora;
     3 - Cotação;
     4 - Notícias;
     5 - Perfil;
@@ -36,6 +36,7 @@ def menu(user_name):
 def assistente():
     sai_som('Oi, qual é o seu nome?')
     user_name = ''
+    
     while True:
             resposta_erro_aleatoria = choice(lista_erros)
             rec = sr.Recognizer()
@@ -57,8 +58,8 @@ def assistente():
     
     with sr.Microphone() as s: #Para usar o microfone
         rec.adjust_for_ambient_noise(s)
-
-        while True: #Enquanto isso for verdadeiro, vai executar o bloco de ações abaixo
+        sair = False
+        while not sair: #Enquanto isso for verdadeiro, vai executar o bloco de ações abaixo
             menu(user_name)
             try:
                 resposta_erro_aleatoria = choice(lista_erros)
@@ -121,10 +122,10 @@ def assistente():
                     resposta = metas()
                     
                     sai_som('{}'.format(resposta))
-                else:
-                    resposta = conversas[entrada]
-
-                sai_som('{}'.format(resposta))                                               
+                
+                if 'sair' in entrada:
+                    sair = True
+                                                               
             
             except sr.UnknownValueError: #Se não conseguir, retorne isso (Necessário especificar o erro)
                 sai_som(resposta_erro_aleatoria)

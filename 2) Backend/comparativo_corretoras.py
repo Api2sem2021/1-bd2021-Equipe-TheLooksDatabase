@@ -5,13 +5,13 @@ cur = con.cursor()
 
 def comparativo():
     sai_som('''
-        ===========================================================
+        
         Bem-vindo ao comparativo de corretoras!
         
     ''')
     print('''
-        Compare duas corretoras em um quesitao desejado.
-        Atualmente temos as corretoras:
+        Compare duas corretoras em um quesito desejado.
+        Atualmente, temos as seguintes corretoras:
         - XP;
         - Itau;
         - Ativa;
@@ -22,19 +22,19 @@ def comparativo():
         - Mirae;
         - Banco do brasil;
         - Santander.
-        ===========================================================
+        
     ''')
 
     sai_som('Diga, qual vai ser a primeira corretora: ')
     corretora = input('')
 
 
-    sai_som('Qual a segunda corretora que deseja fazer comparação: ')
+    sai_som('Qual a segunda corretora que deseja fazer uma comparação: ')
     corretora2 = input('')
 
 
     sai_som('''
-        Atualmente, temos os seguientes critérios de comparação:
+        Atualmente, temos os seguintes critérios de comparação:
 
     ''')
     print('''
@@ -45,7 +45,7 @@ def comparativo():
         - Custos mensais 5;
         - Custos mensais 10.
     ''')
-    sai_som('Qual o critério de compararação:  ')
+    sai_som('Qual o critério de comparação:  ')
     comparativo = input('')
 
 

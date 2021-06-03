@@ -14,7 +14,7 @@ def calculadora():
         sai_som('Qual a taxa de rendimento mensal, em %?')
         taxa_porc = float(input(''))
 
-        sai_som('Em quanto meses pretende resgatar seu investimento?')
+        sai_som('Em quantos meses pretende resgatar seu investimento?')
         mes = int(input(''))
 
         taxa = taxa_porc/100
@@ -23,7 +23,7 @@ def calculadora():
         ##já esse cálculo é o de juros compostos, considerando o investimento de um valor inicial e resgate em alguns meses.
         result_vinicial = valor_inicial*((1+taxa)**mes)
         valor_final = result_aporte + result_vinicial
-        sai_som(f'O total acumulado será de {valor_final:.2f} reais')
+        sai_som(f'O total acumulado será de R${valor_final:.2f} reais')
                         
 
     except: 
