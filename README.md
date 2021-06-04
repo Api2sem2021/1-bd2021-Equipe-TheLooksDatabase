@@ -22,27 +22,21 @@ No front end temos a tela de splash e o layout da tela de menu.
 
 ### Notícias do dia
 
-- Através de um comando de voz você fica sabendo das últimas informaçõs do mercado financeiro
+- A função dentro do nosso assistente Julius recolhe notícias recentes do site Infomoney para nossos usuários ficarem cientes do que está acontecendo no mercado financeiro brasileiro, além de discorrer a notícia através de reconhecimento de voz para que não tenham que ficar lendo e nem procurando informações falsas dentro de diversos sites que não são confiáveis.
 
 ### Perfil do usuário
 
-- Com algumas perguntas simples o assistente consegue identificar qual o seu melhor perfil 
+- É uma espécie de análise que identifica suas preferências e expectativas em relação aos investimentos. Ao responder perguntas básicas, como “você já fez sua reserva de emergência” e “aceitaria riscos para maximizar ganhos”, é possível apontar qual é o seu perfil de investidor, toda perguntas e respostas de forma prática e acessível através do reconhecimento e sintetização de voz.
 
 ### Comparativo entre financeiras
 
-- Essa função traz informações entre as principais empresas, com isso você pode tomar decisões mais precisas
+- Realiza uma conexão com um pequeno banco de dados, elaborado através da tecnologia Sqlite3, que armazena informações fixas sobre as corretoras, como seus códigos, nome, valores para serem comparados, entre outras. O usuário terá acesso a informações em tempo real, de forma prática e rápida através do assistente virtual Julius.
 
 ### Código de ações
 
-- Traz o código das empresas dentro da bolsa de valores
+- Após o usuário inserir o nome da empresa que deseja consultara função "Código" retorna o código presente na Bolsa de Valores para futuros investimentos.
 
-### Tela de Splash
 
-- Traz a tela inicial do app
-
-### Tela de Menu
-
-- Possibilidade uma maior interatividade além do comando de voz
 
 <h1 align="left">Gráfico Burndown</h1>
 <p align="left">
