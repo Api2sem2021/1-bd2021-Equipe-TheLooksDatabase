@@ -19,19 +19,20 @@
 
 ### Calculadora de juros compostos
 
-- Saiba qual será o retorno da sua aplicação de juros compostos no final do período desejado
+- A função dentro do nosso assistente Julius serve para a  realização de cálculos numéricos pelo usuário facilitando qualquer tipo de resultado referentes a questionamentos de investimentos e porcentagens de perda ou ganhos, também diminuindo ao nosso usuário a utilização de outros periféricos externos para cálculos fazendo como que tenha tudo o que precise dentro do nosso assistente.
 
 ### Conversor de Moedas
 
-- Saiba quanto irá pagar por moedas estrangeiras independente de qual esteja usando
+- Por comando de voz, informa o usuário quanto irá pagar em moedas estrangeiras usando a cotação do preço da moeda, na qual é definida pelo mercado conforme as negociações de oferta e demanda feitas ao longo do dia.
 
 ### Cotação do dia 
 
-- Saiba em tempo real qual é o preço que iria pagar por moedas como dólar, euro e Bitcoin!
+- É responsável pela exibição da cotação das moedas cadastradas no nosso código, ela é integrada com uma Api pronta que se chama Awesome Api que exibi a cotação da moeda que o usuário pedir em tempo real, com seus valores atualizados a cada 30 segundos.
 
 ### Metas
 
-- Quanto dinheiro você quer alcançar e em quanto tempo? Forneça alguns valores de seu querer e nós calculamos!
+- Após o usuário inserir quanto gostaria de investir inicialmente e quanto ele gostaria de alcançar, a função "Metas" compara esses valores e apresenta a quantidade que falta para atingir seus objetivos e enquanto tempo deverá alcançar.
+
 
 
 
