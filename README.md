@@ -16,7 +16,7 @@ Nessa sprint apresentaremos a assistente funcional com todas as funções propos
 
 <h1 align="left">Gráfico Burndown</h1>
 <p align="left">
-  <img src="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/Grafico%20burndown%203.jpeg"/>
+  <img src="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/Grafico%20burndown%203%20corrigido.jpeg"/>
 </p> 
 
 
