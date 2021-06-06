@@ -8,6 +8,12 @@
 
 Nessa sprint apresentaremos a otimização do produto.
 
+### Valor da Sprint
+
+-Revisão de algumas funções com pequenos erros.
+-Gravação do video final de testes.
+-Ajustes finais no gitHub.
+
 
 <h1 align="left">Tarefas atendidas</h1>
 
