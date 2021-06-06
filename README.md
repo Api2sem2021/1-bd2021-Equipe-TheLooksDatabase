@@ -8,7 +8,7 @@
 
 Nessa sprint apresentaremos a otimização do produto.
 
-### Valor da Sprint
+<h1 align="left">Valor da Sprint</h1>
 
 - Revisão de algumas funções com pequenos erros
 - Gravação do video final de testes
