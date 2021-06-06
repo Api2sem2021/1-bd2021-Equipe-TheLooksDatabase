@@ -8,6 +8,12 @@
 
 Nessa sprint apresentaremos a assistente funcional com todas as funções propostas.
 
+<h1 align="left">Valor da Sprint</h1>
+
+- Assistente finalizado com as funções desenvolvidas
+- Assistente hábil para utilização do usuário 
+
+
 
 <h1 align="left">Tarefas atendidas</h1>
 
